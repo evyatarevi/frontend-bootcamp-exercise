@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+}
+ul, li, a{
+    display: inline;
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    background-color: #3d3d3d;
+    padding: 15px 0;
+}
+
+a{
+    font-size: 24px;
+    color: #ffffff;
+    padding: 15px 10px;
+    /* background-color: #4CCD99; */
+    /* border-radius: 10px; */
+}
+
+a:hover{
+    color: #ffffff;
+    background-color: #4CCD99;
+
+}
