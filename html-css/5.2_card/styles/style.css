@@ -1,0 +1,21 @@
+body{
+    font-size: 24px;
+}
+section{
+    box-shadow: 5px 5px 30px black;
+    width: 400px;
+}
+img{
+    width: 100%;
+}
+figure{
+    margin: 0;
+}
+figcaption{
+    font-size: 28px;
+}
+a{
+    color: burlywood;
+    font-weight: bold;
+    font-size: 20px;
+}
