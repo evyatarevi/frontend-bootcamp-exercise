@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(26, 26, 26);
+}
+
+.greeting-card{
+    background-color: rgb(236, 236, 236);
+    width: 700px;
+    margin: 200px auto;
+    padding: 50px;
+    text-align: center;
+    border: solid 3px #f1c40f;
+    border-radius: 30px;
+    box-shadow: 0px 0px 30px inset #2ecc71;
+}
+
+header{
+    font-size: 56px;
+    color: #e74c3c;
+}
+
+p{
+    font-size: 48px;
+    color: #3498db;
+}
