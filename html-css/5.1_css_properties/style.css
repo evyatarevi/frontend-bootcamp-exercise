@@ -1,0 +1,17 @@
+h1{
+    font-size: 60px;
+    border: red solid 3px;
+    border-radius: 15px;
+}
+
+h2{
+    font-weight: bold;
+    font-style: italic;
+}
+
+h3{
+    background-color: black;
+    color: white;
+    font-family: monospace;
+    box-shadow: 1px 1px 10px black;
+}
