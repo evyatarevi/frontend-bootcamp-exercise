@@ -1,0 +1,21 @@
+body{
+    background-color: rgb(54, 54, 54);
+}
+blockquote{
+    border: solid 3px #EFBC9B;
+    border-radius: 15px;
+    border-style: ridge;
+    width: 300px;
+    margin: 200px auto;
+    padding: 50px;
+    text-align: center;
+    background: rgba(0, 0, 1, 0.315) url("pexels-scott-webb-1084510.jpg");
+    background-blend-mode: darken;
+    background-size: cover;
+}
+
+q{
+    font-size: 32px;
+    color: #FBF3D5;
+    text-shadow: 0 0 5px black;
+}
