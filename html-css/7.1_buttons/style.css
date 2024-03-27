@@ -1,0 +1,85 @@
+body{
+    color: white;
+    background-color: #216796;
+    text-align: center;
+    padding-top: 50px;
+
+}
+
+button{
+    padding: 8px 15px;
+    margin: 20px;
+    color: white;
+    border: none;
+
+}
+
+.Register1{
+    background-color:#3498db;
+}
+
+.Register2{
+    background-color:#27ae60;
+    border-radius: 30px;
+}
+
+.Register3{
+    background-color: rgba(0,0,0,0);
+    border: solid 2px #d35400;
+}
+
+.Register4{
+    background-color: rgba(0,0,0,0);
+    border: solid 2px #f1c40f;
+    border-radius: 30px;
+}
+
+.Submit1{
+ background-color: #f1c40f;
+}
+
+.Submit2{
+    background-color: #fd79a8;
+    border-radius: 30px;
+}
+
+.Submit3{
+    background-color: rgba(0,0,0,0);
+    border: solid 2px #fd79a8;
+}
+
+.Submit4{
+    background-color: rgba(0,0,0,0);
+    border: solid 2px #81ecec;
+    border-radius: 30px;
+}
+
+
+.Register1:hover{
+    background-color:#3498db8f;
+}
+.Register2:hover{
+    background-color:#27ae5fa8;
+    border-radius: 30px;
+}
+.Register3:hover{
+    background-color: #d35400;
+}
+.Register4:hover{
+    background-color: #f1c40f;
+}
+
+
+.Submit1:hover{
+    background-color: #f1c40fdc;
+}
+.Submit2:hover{
+    background-color: #fd79a7c9;
+    border-radius: 30px;
+}
+.Submit3:hover{
+    background-color: #fd79a8;
+}
+.Submit4:hover{
+    background-color: #81ecec;
+}
