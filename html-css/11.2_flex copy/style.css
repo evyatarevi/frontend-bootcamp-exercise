@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    width: 500px;
+    height: 500px;
+    background-color: bisque;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+div{
+    width: 100px;
+    height: 100px;
+}
+
+.box1{
+    background-color: green;
+}
+
+.box2{
+    background-color: blue;
+}
+
+.box3{
+    background-color: red;
+}
