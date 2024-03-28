@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+
+.container{
+    /* width: 500px; */
+    height: 100vh;
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+a{
+    /* display: block; */
+    text-decoration: none;
+    color: rgb(88, 88, 88);
+    font-size: 24px;
+    padding: 10px;
+}
+
+.logo{
+    font-weight: bold;
+    font-size: 28px;
+}
+
+@media screen and (min-width: 540px){
+    .container{
+        height: initial;
+        flex-direction: row;
+        justify-content: end;
+        align-items: start;
+        padding: 10px;
+        background-color: bisque;
+    }
+    .logo{
+        position: absolute;
+        left: 20px;
+    }
+}
