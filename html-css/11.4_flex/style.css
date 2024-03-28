@@ -7,8 +7,8 @@
     height: 500px;
     background-color: bisque;
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    justify-content: end;
+    align-items: end;
 }
 
 div{
