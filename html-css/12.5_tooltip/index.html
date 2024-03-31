@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        span{
+            color: aqua;
+            position: relative;
+        }
+        [data-tooltip]:hover:after{
+            content: attr(data-tooltip);
+            padding: 5px;
+            width: 90px;
+            background-color: yellowgreen;
+            color: blueviolet;
+            border-radius: 10px;
+            cursor: pointer;
+            position: absolute;
+            top: -20px;
+            left: 0;
+        }
+    </style>
+  </head>
+  <body>
+    <article>
+      <p>
+        Lorem ipsum dolor <span data-tooltip="This is tooltip">sit</span> amet consectetur adipisicing elit. Doloremque
+        repudiandae architecto <span data-tooltip="This is tooltip">unde</span> reiciendis cupiditate molestiae natus ea,
+        rem expedita minus velit, optio eum quod dolores aperiam voluptatibus
+        inventore mollitia <span data-tooltip="This is tooltip">ipsum!</span> 
+      </p>
+    </article>
+  </body>
+</html>
