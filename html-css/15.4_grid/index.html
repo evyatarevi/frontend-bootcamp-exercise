@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: #9b9b9b;
+        display: flex;
+        align-items: center;
+        height: 100vh;
+      }
+      main {
+        display: grid;
+        grid-template-areas:
+          "box1 box1 box2 box2 box2 box3 box4 box4"
+          "box1 box1 box2 box2 box2 box3 box4 box4"
+          "box5 box5 box2 box2 box2 box6 box6 box7"
+          "box5 box5 box8 box8 box9 box6 box6 box7"
+          "box5 box5 box8 box8 box10 box10 box10 box7"
+          "box12 box13 box13 box14 box10 box10 box10 box11"
+          "box12 box13 box13 box14 box10 box10 box10 box11";
+        gap: 10px;
+        padding: 20px;
+        height: 70vh;
+        width: 100%;
+      }
+      div {
+        padding: 30px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+      }
+      .box1 {
+        grid-area: box1;
+        background: url(images/pexels-alexas-fotos-12299686.jpg) center
+          center/cover;
+      }
+      .box2 {
+        grid-area: box2;
+        background: url(images/pexels-pixabay-163077.jpg) center center/cover;
+      }
+      .box3 {
+        grid-area: box3;
+        background: url(images/pexels-erik-mclean-7422160.jpg) center
+          center/cover;
+      }
+      .box4 {
+        grid-area: box4;
+        background: url(images/pexels-ipek-townsend-10215306.jpg) center
+          center/cover;
+      }
+      .box5 {
+        grid-area: box5;
+        background: url(images/pexels-karolina-grabowska-7946466.jpg) center
+          center/cover;
+      }
+      .box6 {
+        grid-area: box6;
+        background: url(images/pexels-leah-newhouse-618902.jpg) center
+          center/cover;
+      }
+      .box7 {
+        grid-area: box7;
+        background: url(images/pexels-craig-adderley-3411134.jpg) center
+          center/cover;
+      }
+      .box8 {
+        grid-area: box8;
+        background: url(images/pexels-pixabay-264905.jpg) center center/cover;
+      }
+
+      .box9 {
+        grid-area: box9;
+        background: url(images/pexels-craig-adderley-3411134.jpg) center
+          center/cover;
+      }
+
+      .box10 {
+        grid-area: box10;
+        background: url(images/pexels-erik-mclean-7422160.jpg) center
+          center/cover;
+      }
+
+      .box11 {
+        grid-area: box11;
+        background: url(images/pexels-karolina-grabowska-7946466.jpg) center
+          center/cover;
+      }
+
+      .box12 {
+        grid-area: box12;
+        background: url(images/pexels-pixabay-264905.jpg) center center/cover;
+      }
+
+      .box13 {
+        grid-area: box13;
+        background: url(images/pexels-leah-newhouse-618902.jpg) center
+          center/cover;
+      }
+
+      .box14 {
+        grid-area: box14;
+        background: url(images/pexels-karolina-grabowska-7946466.jpg) center
+          center/cover;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="box1"></div>
+      <div class="box2"></div>
+      <div class="box3"></div>
+      <div class="box4"></div>
+      <div class="box5"></div>
+      <div class="box6"></div>
+      <div class="box7"></div>
+      <div class="box8"></div>
+      <div class="box9"></div>
+      <div class="box10"></div>
+      <div class="box11"></div>
+      <div class="box12"></div>
+      <div class="box13"></div>
+      <div class="box14"></div>
+    </main>
+  </body>
+</html>
