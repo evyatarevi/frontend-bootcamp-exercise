@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+:root {
+  --gray-color: #66666636;
+  --white-color: #fff;
+  --border-gray: rgba(102, 102, 102, 0.356);
+  --light-gray: #666;
+  --light-gray-2: rgb(190, 190, 190);
+  /*--font-family: popins */
+}
+.center-vartical {
+  display: flex;
+  align-items: center;
+  margin-right: 0.8rem;
+}
+.center-vartical img {
+  margin-right: 0.8rem;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  height: 73.3rem;
+  justify-content: space-evenly;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 4rem;
+  width: 58.4rem;
+  padding: 32px;
+  border: solid 1px var(--gray-color);
+  border-radius: 16px;
+}
+
+form input {
+  border: solid 1px var(--border-gray);
+  border-radius: 12px;
+  height: 5.6rem;
+  display: block;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.login-btn {
+  color: #fff;
+  font-size: 2.2rem;
+  padding: 2.1rem 0;
+  text-align: center;
+  background-color: var(--light-gray-2);
+  border-radius: 50px;
+}
+
+.small-font {
+  font-size: 1.6rem;
+  color: var(--light-gray);
+}
+
+.password-label {
+  display: flex;
+  justify-content: space-between;
+}
+
+form > a {
+  text-align: center;
+  font-size: 2.2rem;
+  text-decoration: underline;
+  text-decoration-color: black;
+}
+
+.create-account-btn {
+  display: block;
+  font-size: 2rem;
+  text-align: center;
+  border-radius: 32px;
+  border: solid 1px rgb(0, 0, 0);
+  width: 52rem;
+  padding: 1.8rem 0;
+  margin: 4rem auto 0 auto;
+}
+
+/* recent-section */
+.recent-section {
+  width: 38.4rem;
+  height: 41.2rem;
+}
+
+.circle {
+  background-color: var(--light-gray-2);
+  width: 6.4rem;
+  height: 6.4rem;
+  border-radius: 50%;
+  margin-bottom: 3.2rem;
+}
+
+.recent-section h2 {
+  font-size: 3.2rem;
+  margin-bottom: 0.4rem;
+}
+
+.recent-section p {
+  font-size: 1.6rem;
+}
+
+.accounts-list {
+  margin-top: 3.2rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+.account-item {
+  width: 18.4rem;
+  height: 20.8rem;
+  border: solid var(--border-gray) 1px;
+  border-radius: 8px;
+  font-size: 1.6rem;
+}
+.account-item img {
+  height: 16.8rem;
+  width: 18.4rem;
+  border-bottom: solid var(--border-gray) 1px;
+}
+.item1 img {
+  background: url(../assets/dog.jpeg) center;
+}
+
+.item2 img {
+  background: url(../assets/placeholder.jpeg) center center/cover;
+}
+
+.account-item label {
+  display: block;
+  text-align: center;
+}
+
+footer {
+  border-top: solid 1px var(--gray-color);
+  border-bottom: solid 1px var(--gray-color);
+  padding: 2rem;
+  font-size: 2rem;
+  display: flex;
+  justify-content: space-between;
+  color: var(--light-gray);
+}
+ul {
+  width: 60%;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 1.4rem;
+}
+footer button {
+  font-size: 1.6rem;
+  color: inherit;
+  display: flex;
+  align-items: center;
+}
