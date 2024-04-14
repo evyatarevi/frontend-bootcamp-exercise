@@ -27,6 +27,6 @@ console.log(num2);
 
 /*
 why it is recommend to use always in const?
-not always, but when you won't to change th value.
+not always, but when you won't to change the value.
 const helps prevent bugs and makes the code easier to understand. // in this line I was helped in AI.
 */
