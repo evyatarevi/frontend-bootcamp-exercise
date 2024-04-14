@@ -1,7 +1,7 @@
 // 1
 const myName = 'Evyatar';
 const myAge = 30;
-console.log(`My name is ${myName} and I am ${myAge} years old.`);
+console.log('My name is ' + myName + 'and I am ' + myAge + 'years old.');
 
 // 2
 const favColor = 'Whit';
