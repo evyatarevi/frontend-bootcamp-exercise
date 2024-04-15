@@ -89,8 +89,8 @@ switch (mealPlan) {
 }
 
 // 6
-const satisfactionScore = 5;
-switch (satisfactionScore) {
+const satisfactionScore = 90;
+switch (true) {
     case satisfactionScore >= 90:
         console.log('Highly Satisfied');
         break;
