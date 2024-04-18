@@ -66,10 +66,12 @@ for (const Expense of travelExpenses6) {
 }
 console.log(sum6);
 
+
 // 7. Highest Single Travel Expense
 const travelExpenses7 = [50, 100, 75, 125, 200];
 travelExpenses7.sort((a, b) => b - a);
 console.log(travelExpenses7[0]);
+
 
 // 8. Expenses Under Budget
 const travelExpenses8 = [50, 100, 75, 125, 200];
@@ -79,12 +81,21 @@ for (const expense of travelExpenses8) {
 }
 console.log(counter8);
 
+
 // 9. Calculate Total Expenses for Each Category
 const categoryExpenses9 = [
     [100, 200],
     [150, 175],
     [120, 250],
 ];
+let sum9 = 0;
+for (const expense of categoryExpenses9) {
+    for (const innerExpense of expense) {
+        sum9 += innerExpense;
+    }
+    console.log(sum9);
+    sum9 = 0;
+}
 
 // 10. Shortest Route in Each Travel Plan
 const routeDistances10 = [
@@ -92,6 +103,18 @@ const routeDistances10 = [
     [150, 175],
     [100, 250],
 ];
+let shorterRoute;
+
+if (routeDistances10[0]) { //if exist items in routeDistances10
+    for (const plan of routeDistances10) {
+        for (const route of plan) {
+            !shorterRoute && (shorterRoute = route);
+            shorterRoute && (route < shorterRoute && (shorterRoute = route));
+        }
+        console.log(shorterRoute);
+        shorterRoute = '';
+    }
+};
 
 // 11. Average Duration per Activity Type
 const activityDurationsMatrix11 = [
@@ -99,6 +122,11 @@ const activityDurationsMatrix11 = [
     [1, 4],
     [3, 2],
 ];
+// const arr9 = [1,2,3,4,5,6]
+// for (const x of arr9){
+//     if(x === 4) continue;
+//     console.log(x);
+// }
 
 // 12. Find the Destination with the Highest Rating in Each Category
 const destinationRatingMatrix12 = [
