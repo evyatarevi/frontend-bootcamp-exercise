@@ -122,6 +122,7 @@ const activityDurationsMatrix11 = [
     [1, 4],
     [3, 2],
 ];
+
 // const arr9 = [1,2,3,4,5,6]
 // for (const x of arr9){
 //     if(x === 4) continue;
