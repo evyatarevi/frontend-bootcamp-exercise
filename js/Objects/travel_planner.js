@@ -24,6 +24,7 @@ const travelPlanner = {
         this.locations.splice(locationIndex, 1);
         return 'The location deleted successfully';
     },
+
     findLocation(locationName) {
         const indexLocation = this.getIndexLocationName(locationName);
         if (indexLocation === -1) {
@@ -31,6 +32,7 @@ const travelPlanner = {
         }
         return this.locations[indexLocation];
     },
+
     sortLocations() {
         this.locations.sort((a, b) => {
             const name1 = a.name.toLowerCase();
@@ -45,6 +47,7 @@ const travelPlanner = {
         });
         return 'The locations sorted successfully';
     },
+
     editLocation(locationName, updateDetails) {
         const locationIndex = this.getIndexLocationName(locationName);
         if (locationIndex === -1) {
@@ -53,6 +56,7 @@ const travelPlanner = {
         this.locations[locationIndex] = { ...this.locations[locationIndex], ...updateDetails }; //This allow to user send in object only the properties to update 
         return 'The location updated successfully';
     },
+
     showAll() {
         this.locations.forEach(location => {
             const { name, ...details } = location;
@@ -63,9 +67,11 @@ const travelPlanner = {
             }
         });
     },
+
     filterLocation(description) {
         return this.locations.filter(location => location.description.includes(description));
     },
+
     rateLocation(locationName, rating) {
         if (rating < 1 || rating > 5 || typeof rating !== 'number' || !rating) {
             return 'Invalid rating input';
@@ -75,6 +81,7 @@ const travelPlanner = {
         this.locations[indexLocation].rating.push(rating);
         return 'Added rating successfully';
     },
+
     getAverageRating(locationName) {
         const location = this.findLocation(locationName);
         if (!location) { return 'Invalid location name'; }
@@ -83,6 +90,7 @@ const travelPlanner = {
         }, 0);
         return sumRating / location.rating.length;
     },
+
     getTopRatedLocation() {
         const allAverages = this.locations.map(location => this.getAverageRating(location.name));
         allAverages
