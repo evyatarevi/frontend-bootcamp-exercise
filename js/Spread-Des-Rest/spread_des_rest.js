@@ -1,19 +1,21 @@
 // rest
-const [x1, ...rest] = [1, 2, 3, 4, 5, 6]
-rest
-const examFun = (...arr) => { }
-examFun(1, 2, 3);
+// const [x1, ...rest] = [1, 2, 3, 4, 5, 6]
+// rest
+// const examFun = (...arr) => { }
+// examFun(1, 2, 3);
 // spread
-const arr3 = [1, 2, 3];
-const x3 = [...arr3];
+// const arr3 = [1, 2, 3];
+// const x3 = [...arr3];
 // const newPerson = {
 //     ...person,
 //     job: 'Software Developer'
 // };``
 // dest
-const [y1, y2, y3] = [1, 2, 3];
-y1
-[y1, y2] = [y2, y1]
+// const [y1, y2, y3] = [1, 2, 3];
+// y1
+// [y1, y2] = [y2, y1]
+
+
 
 // 1
 const destinationDetails = {
