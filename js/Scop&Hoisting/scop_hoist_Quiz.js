@@ -1,7 +1,7 @@
 // 1. Question: Which of the following correctly describes the difference between var , let,
 //and const ?
-//=> d) var declarations are hoisted and initialized as undefined .let and const
-//declarations are not hoisted.
+//=> b) var declarations are hoisted and initialized as undefined .let and const
+//declarations are hoisted but not initialize.
 
 
 //2.Question: What will be the output of the following code snippet ?
@@ -62,4 +62,7 @@
 
 
 // "temporal dead zone"
-// Variables declared with let and const are hoisted to the top of their containing block, but they are not initialized until the actual declaration statement is encountered during runtime.This period between the start of the block and the actual declaration is referred to as the "temporal dead zone".Trying to access these variables before their declaration results in a ReferenceError.
+// Variables declared with let and const are hoisted to the top of their containing block, 
+// but they are not initialized until the actual declaration statement is encountered during runtime.
+// This period between the start of the block and the actual declaration is referred to as the 
+// "temporal dead zone".Trying to access these variables before their declaration results in a ReferenceError.
