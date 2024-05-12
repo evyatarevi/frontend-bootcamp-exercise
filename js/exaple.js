@@ -1,6 +1,16 @@
+class Person {
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+        if (age) {
+            this.age = age;
+        }
+    }
+}
 
-const x1 = Number('as');
-console.log(x1);
-
-const y = 0;
+const person1 = new Person('evyatar');
+console.log(person1.age);
+for (const key in person1) {
+    console.log(key);
+}
 
