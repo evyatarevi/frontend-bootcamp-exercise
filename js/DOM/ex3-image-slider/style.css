@@ -1,0 +1,8 @@
+li{
+    display: none;
+    height: 500px;
+}
+
+.active{
+    display: block;
+}
