@@ -1,16 +1,15 @@
-class Person {
-    constructor(name, age) {
-        this.name = name;
-        this.age = age;
-        if (age) {
-            this.age = age;
-        }
+// Write a function calculateAverage that takes an array of numbers as an argument and returns the average(mean) of those numbers.
+const calculateAverage = arr => {
+    let sum = 0;
+    for (const num of arr) {
+        sum += num;
     }
+    return sum / arr.length;
 }
 
-const person1 = new Person('evyatar');
-console.log(person1.age);
-for (const key in person1) {
-    console.log(key);
+const calculateAverage2 = arr => {
+    const sum = arr.reduce((acc, curr) => acc += curr, 0);
+    return sum / arr.length;
 }
 
+console.log(calculateAverage2([1, 2, 3]));
