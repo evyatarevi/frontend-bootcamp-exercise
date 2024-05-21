@@ -83,9 +83,7 @@
 
     function startApp () {
         fetch(`${BASE_URL}/users`)
-        .then(res => {
-            return parseData(res);
-        })
+        .then(parseData)
         .then(data => {
             USERS_DATA = data;
             uploadUsersAndPosts();
@@ -121,9 +119,7 @@
         
         function getPostsOfUser(userId, userDiv){
             fetch(`${BASE_URL}/posts?userId=${userId}`)
-            .then(response => {
-                return parseData(response);
-            })
+            .then(parseData)
             .then(data => uploadUserPosts(userDiv, data))
             .catch(error => {
                 throw new Error('Fetch posts failed')
