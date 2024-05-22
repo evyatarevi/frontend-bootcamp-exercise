@@ -89,15 +89,15 @@
             `;
         usersContainer.appendChild(userDiv);
     }
+    
+    const errorMessage = error => {
+        errorContainer.classList.add('visible');
+        errorContainer.textContent = error;
+    }
 
     const mainApp = async () => {
         const users = await fetchUsers();
         users.forEach(createUserContainer);
-    }
-
-    const errorMessage = error => {
-        errorContainer.classList.add('visible');
-        errorContainer.textContent = error;
     }
 
     mainApp().catch(errorMessage);
