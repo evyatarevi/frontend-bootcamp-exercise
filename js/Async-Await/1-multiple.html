@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise Chaining with Multiple API Calls to JSONPlaceholder</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #007bff;
+        }
+
+        .user {
+            margin: 20px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background: #f3f3f3;
+        }
+
+        h2 {
+            color: #040433;
+        }
+
+        .posts {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+
+        .post {
+            margin: 5px 0;
+            padding: 5px;
+            border: 1px solid #e0e0e0;
+            border-radius: 5px;
+            background: #fafafa;
+        }
+
+        .post strong {
+            color: #070956;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Users and Their Posts</h1>
+        <div id="users"></div>
+    </div>
+</body>
+    <script>
+        const BASE_URL = 'https://jsonplaceholder.typicode.com';
+        const c = console.log.bind(document);
+
+        const usersContainer = document.querySelector('#users');
+        // fetch users
+        const fetchUsers = async () => {
+            const users = await fetch(`${BASE_URL}/users`);
+            return users.json();
+        }
+
+        const fetchPosts = async (userId) => {
+            const posts = await fetch(`${BASE_URL}/posts?userId=${userId}`);
+            return posts.json();
+        }
+
+        const createUserContainer = ({id, name, email}) => {
+            const userDiv = document.createElement('div');
+            userDiv.classList.add('user');
+            userDiv.setAttribute('id', `user${id}`)
+            userDiv.innerHTML = `
+            <h2>${name}</h2>
+            <p><strong>Email:</strong> ${email}</p>
+            <div class="posts"></div> 
+            `;
+            usersContainer.appendChild(userDiv);
+        }
+
+        const createPostContainer = ({userId, title, body}) => {
+            const postDiv = document.createElement('div');
+            postDiv.classList.add('post');
+            postDiv.innerHTML = `
+                <strong>${title}</strong>
+                <br>${body}
+            `;
+            const userDiv = document.querySelector(`#user${userId}`);
+            userDiv.querySelector(`.posts`).appendChild(postDiv);
+        }
+
+        const displayUsersAndPosts = async () => {
+            try {
+                const users = await fetchUsers();
+                users.forEach(async user => {
+                    createUserContainer(user);
+                    const posts = await fetchPosts(user.id);
+                    posts.forEach(createPostContainer);
+                });
+            } catch (error) {
+                c(error);
+            }
+        }
+
+        displayUsersAndPosts();
+
+
+
+
+
+        // serDiv.innerHTML = `
+        //     <h2>${userName}</h2>
+        //     <p><strong>Email:</strong> ${userEmail}</p>
+        //     <div cla
+
+   
+    </script>
+</html>
