@@ -71,16 +71,20 @@
         if(!response.ok){
             throw new Error('Network response was not ok');
         }
-        return false;
+        return response;
     }
 
     const fetchUsers = async () => {
+        try {
             const users = await fetch(BASE_URL);
             checkError(users);
-            return users.json();
+            return await users.json();
+        } catch (error) {
+            throw new Error(`Fetching users failed: ${error.message}`);
+        }
     }
 
-    const createUserContainer = ({name, email}) => {
+    const createUserElement = ({name, email}) => {
         const userDiv = document.createElement('div');
         userDiv.classList.add('user');
         userDiv.innerHTML = `
@@ -97,9 +101,11 @@
 
     const mainApp = async () => {
         const users = await fetchUsers();
-        users.forEach(createUserContainer);
+        users.forEach(createUserElement);
     }
 
     mainApp().catch(errorMessage);
+
+    // See improve code: I ask ChatGPT to improve my code: https://chatgpt.com/share/eba14d49-d558-4500-8d6c-b5a2913bc496
 </script>
 </html>
